@@ -1,0 +1,1 @@
+Ela procura por um elemento, se ele existir então faz com que seja removido, conectando o nó anterior a ela com o proximo e vice-versa 
