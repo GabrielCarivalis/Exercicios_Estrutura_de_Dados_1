@@ -1,0 +1,24 @@
+Exercício 2:
+    Descreva a funcionalidade do seguinte fragmento de código (não faça re-leituras do
+código em português, o que se espera neste exercício é que você determine o que ele resolve):
+
+Queue* misterio1 (Queue *q) 
+{
+    Stack *s = create ();
+
+    while (!empty(q)) 
+    {
+        push(s, dequeue(q));
+    }
+
+    while (!empty(s)) 
+    {
+        enqueue(q, pop(s));
+    }
+    
+    return q;
+}
+
+Resposta: O seguinte código inverte a ordem da fila.
+            Ex: Queue : 1, 2, 3, 4, 5. 
+            o retorno da função será: 5, 4, 3, 2, 1.
